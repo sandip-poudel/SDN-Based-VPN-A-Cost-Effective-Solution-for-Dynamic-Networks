@@ -137,15 +137,11 @@ This script will:
 - Add public keys and allowed IPs
 - Bring up the interfaces and test connectivity
 
-### 5. Use Mininet CLI to test VPN communication
-Once you're in the Mininet prompt (`mininet>`), run:
-```bash
-h1 ping -c 4 192.168.2.2
-```
+The script should try running a ping test and log the results immediately in the terminal.
+If it drops any packets then something probably went wrong.
+Otherwise if it successfully receives 4 packets, then you are good to go.
 
-If the VPN is correctly configured, you should see successful ping responses from `h2`.
-
-### 6. Exit Mininet
+### 5. Exit Mininet
 To stop the Mininet simulation:
 ```bash
 exit
