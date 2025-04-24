@@ -160,7 +160,7 @@ h3 ping -c 2 h4      # Normal LAN traffic
 h2 ping -c 2 h3      # Cross-traffic (non-VPN)
 ```
 
-> **Note:** In this lab, **only h1 and h2 are configured with WireGuard** interfaces using the `192.168.2.x` subnet.
+> **Note:** **only h1 and h2 are configured with WireGuard** interfaces using the `192.168.2.x` subnet.
 >
 > - When you ping from `h1` to `h2`, it uses the `wg0` VPN tunnel — this is VPN traffic.
 > - All other communications (like `h1 → h4`, `h3 → h4`, or `h2 → h3`) use their default 10.0.1.x interfaces and are **non-VPN**.
@@ -176,7 +176,7 @@ python3 flow_visualizer.py
 The Pygame window will:
 
 - Display each host and switch with their IPs
-- Visualize flow paths using curved arrows
+- Visualize flow paths using arrows
 - Animate packet flow direction with colored pulses
 
 ---
